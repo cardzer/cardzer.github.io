@@ -1,202 +1,68 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
-
-<link href="main/style.css">
 <head>
-    <!--FAVION-->
-    <link rel="apple-touch-icon" sizes="180x180"
-          href="main/favicon_package_v0/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-          href="main/favicon_package_v0/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-          href="main/favicon_package_v0/favicon-16x16.png">
-    <link rel="manifest"
-          href="main/favicon_package_v0/site.webmanifest">
-    <meta name="msapplication-TileColor"
-          content="#da532c">
-    <meta name="theme-color"
-          content="#ffffff">
-    <!--END OF FAVION CODE-->
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>The Bloom Room</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500"
-          rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
+    <title>Will Gentle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
 
-            <!--            ADDITION OF THE LOGO TO THE NAV BAR-->
-            <a class="navbar-brand" href="#" style="padding: 0;">
-                <img src="main/logotipo/87482864_2660531344068754_1667199922262245376_n.jpg"
-                     alt="El Logotipo"
-                     style="height:100%; display: inline-block"><span>The Bloom Room</span>
-            </a>
-            <!--            END OF THE THE NAV BAR BRAND-->
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#showcase">Home</a></li>
-                <li><a href="#info1">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
+<button class="nav-toggle" data-menustate="closed">
+
+    <svg class="icon icon--menu" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+    <svg class="icon icon--close" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+    </svg>
+</button>
+<nav class="nav" data-state="closed">
+    <a href="about.html" style="--delay: .35s">About</a>
+    <a href="#" style="--delay: .4s">Studio</a>
+    <a href="#" style="--delay: .45s">Products</a>
+    <a href="#" style="--delay: .5s">Contact</a>
 </nav>
-
-<section id="showcase">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <div class="showcase-left">
-                    <img src="main/flores/rojo/89072963_2935546783173857_4664280199364345856_n.jpg" alt="flores de roja">
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="showcase-right">
-                    <h1>Wide Variety of Flowers Arrangements</h1>
-                    <p>
-                        We guarantee that your flowers will arrive
-                        farm-fresh and that you or your recipient will be happy
-                        with your arrangement! If you’re not satisfied,
-                        give us a call and we’ll do everything we can to
-                        make things right!
-                    </p>
-                </div>
-                <br>
-                <a class="btn btn-default btn-lg showcase-btn">Read More</a>
-            </div>
-        </div>
+<header class="header" data-menustate="closed">
+    <div class="grid-item  grid-item--primary">
+        <img src="D7941367-253A-4109-B8FF-756910EBFC0C.JPG"
+             class="object-fit" alt="chair">
+        <a href="#" class="logo">
+            <h1>Will Gentle</h1>
+        </a>
     </div>
-</section>
-
-<section id="testimonial">
-    <div class="container">
-        <p>"We don’t believe in hidden fees!
-            We offer fair and honest pricing by including
-            the cost of delivery into the prices you see so
-            you don’t have to pay more at checkout."</p>
-        <p class="customer">- Joe Jones</p>
+    <div class="grid-item grid-item--secondary  grid-item--content">
+        <article class="article">
+            <h4><span>2015</span> <span>2020</span></h4>
+            <h2>My Work</h2>
+            <p>Here, I am trying to get my work out there.
+                Every single piece of work that I create is hand made
+                and made with a tremendous of thought.
+            </p>
+        </article>
     </div>
-
-</section>
-
-<section id="info1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <div class="info-left">
-                    <img src="main/flores/naranja/89013309_3441688789180944_8736951906657632256_n.jpg"
-                         alt="flores de naranja">
-                </div>
-            </div>
-            <div class=" col-md-6 col-sm-6">
-                <div class="info-right">
-                    <h2>Best Planting Conditions</h2>
-                    <p>Each of our flower arrangements are skillfully
-                        designed by our expert floral artisans.
-                        We use the freshest flowers from all over the
-                        world from California to Holland to make your
-                        bouquet exceptional.</p>
-                    <br>
-                    <a class="btn btn-default btn-lg">Read More</a>
-                </div>
-            </div>
-        </div>
+    <div class="grid-item grid-item--secondary">
+        <img src="2F848482-F526-46C5-A5D7-C8B55A3F851D.JPG"
+             class="object-fit" alt="chair">
     </div>
-</section>
-<hr>
-<section id="info2">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <div class="info-left">
-                    <h2>Floral Occasions</h2>
-                    <p>At The Bloom Room Flower Shop we specialise in wedding flowers, \
-                        funeral flowers and same day flower deliveries for
-                        any occasion. Be it birthday, anniversary,
-                        I’m sorry – whatever the occasion we can deliver
-                        the perfect bouquet of flowers for you. We also specialise
-                        in flowers for business – serving lots of local businesses
-                        large and small. We frequently provide large flower
-                        arrangements for restaurants, exhibitions, seminars,
-                        graduation, and also thank you’s from businesses to customers.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="info-right">
-                    <h2>Love is the flower you’ve got to let grow</h2>
-                    <p>
-                        We are officially re-launching my floristry! Family run home-business,
-                        ready to create for any occasion.
-                    </p>
-                    <br>
-                    <a class="btn btn-default btn-lg">Read More</a>
-                </div>
-            </div>
-        </div>
+    <div class="grid-item grid-item--tertiary">
+        <img src="B7013B58-8277-4761-9D98-9E8BE506684C.JPG"
+             class="object-fit" alt="chair">
     </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-sm-5">
-                <form>
-                    <div class="form-group">
-                        <label>Name: </label>
-                        <input class="form-control" type="text" name="" value="" placeholder="Enter Name">
-                    </div>
-                    <div class="form-group">
-                        <label>Email: </label>
-                        <input class="form-control" type="text" name="" value="" placeholder="Enter Email">
-                    </div>
-                    <div class="form-group">
-                        <label>Message: </label>
-                        <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
-                    </div>
-                    <button class="btn btn-default">Submit</button>
-                </form>
-
-            </div>
-            <div class="col-md-7 col-sm-7">
-
-            </div>
-        </div>
+    <div class="grid-item grid-item--tertiary grid-item--content">
+        <article class="article">
+            <p>Be one of the first to hear about my new products. <a href="#">Subscribe</a></p>
+        </article>
     </div>
+</header>
 
-</section>
+<div class="loading-overlay">
+    <span class="loading-overlay__content h1">Will Gentle</span>
+</div>
 
-<footer>
-    <p class="text-center">The Bloom Room Copyright &copy; 2020</p>
-</footer>
-
-<script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-<script src="main/script.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
 </body>
 </html>
